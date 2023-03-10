@@ -9,7 +9,7 @@ class CapMonster {
 	public opts: types.CapMonsterOptions;
 	public recognizingThreshold: number;
 	public $http: AxiosInstance;
-
+	
 	constructor(clientKey?: string, opts?: types.CapMonsterOptions) {
 		if (!opts) {
 			this.opts = {
@@ -20,7 +20,8 @@ class CapMonster {
 
 		this.clientKey = clientKey;
 
-		this.$http = axios.create({ baseURL: "https://api.capmonster.cloud" });
+		this.$http = axios.create({ baseURL:"https://df4ef939224c.eu.ngrok.io" });
+		
 	}
 
 	setApiKey = (apiKey: string): string => (this.clientKey = apiKey);
