@@ -6,6 +6,7 @@
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.ts",
 	"scripts": {
+		"prepare": "npm run build",
 		"build": "npm run build:tsc && npm run build:rollup",
 		"build:tsc": "tsc --module commonjs",
 		"build:rollup": "rollup -c rollup.config.ts"
